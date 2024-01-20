@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/netflix-bg.jpg);
+    border: 0;
+    
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    margin: 20px 30px;
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    padding: 7px 20px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn{
+    display: inline-flex;
+    border: 1px solid #fff;
+    align-items: center;
+    padding: 7px 10px;
+    background: transparent;
+
+}
+
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.header-content h1{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+.header-content h3{
+    margin: 1rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.header-content p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.email-signup {
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    margin: 20px  60px;
+    overflow: hidden;
+    
+   
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+  
+}
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+   
+}
+
+/*-----------features-----------*/
+
+.features{
+    padding: 50px 12%;
+    margin-bottom: 22px;
+    border-top: 8px solid #333;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    width: 100%;
+    align-items: center;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 42px;
+    font-weight: 900;
+}
+.features p{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*-----------faq-----------*/
+
+.faq{
+    padding: 10px 12%;
+    min-height: auto;
+    text-align: center;
+    border-top: 8px solid #333;
+}
+.faq h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+   
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight:600;
+    padding: 20px;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    color: #949191;
+}
+
+label::after{
+    content: '+';
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;
+}
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: center;
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition:  max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label +.content{
+    max-height: 60%;
+    padding: 30px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email-signup{
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto 60px; 
+}
+
+/*______________footer___________*/
+.footer{
+    padding: 70px 12% 10px;
+    border-top: 8px solid #333;
+    color: #949191;
+    font-size: 18px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    color: #949191;
+    font-size: 15px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px auto;
+}
+.footer button{
+    color: #fff;
+}
+.copyright-text{
+    margin-top: 20px;
+    font-size: 15px;
+}
